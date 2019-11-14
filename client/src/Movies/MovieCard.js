@@ -5,12 +5,12 @@ const MovieCard = props => {
   return (
     <Link to={`/Movies/${props.id}`}>
       <div className="movie-card">
-        <h2>{title}</h2>
+        <h2>{props.title}</h2>
         <div className="movie-director">
-          Director: <em>{director}</em>
+          Director: <em>{props.director}</em>
         </div>
         <div className="movie-metascore">
-          Metascore: <strong>{metascore}</strong>
+          Metascore: <strong>{props.metascore}</strong>
         </div>
         <h3>Actors</h3>
       </div>
